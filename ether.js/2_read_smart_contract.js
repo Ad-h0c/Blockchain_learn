@@ -17,7 +17,6 @@ const ERC20_ABI = [
 const address = "0xCc7bb2D219A0FC08033E130629C2B854b7bA9195";
 
 const contract = new ethers.Contract(address, ERC20_ABI, provider);
-
 const main = async () => {
   const name = await contract.name();
   const symbol = await contract.symbol();
@@ -34,12 +33,7 @@ const main = async () => {
       "ether"
     )}\n`
   );
-  console.log(
-    `Number of ${name} coins the address holds are  ${ethers.utils.formatUnits(
-      balance,
-      "ether"
-    )}`
-  );
+  console.log(`The balance:  ${ethers.utils.formatUnits(balance, "ether")}`);
 };
 
 main().catch((error) => {

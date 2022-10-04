@@ -12,7 +12,7 @@ const address = `0x30AE003d9c29Cd9D403F84312744B0f1abcae95c`;
 const main = async () => {
   const balance = await provider.getBalance(address);
   console.log(
-    `The balance of ${address}: ${ethers.utils.formatUnits(balance, "wei")}`
+    `The balance of ${address}: ${ethers.utils.formatEther(balance)}`
   );
 };
 

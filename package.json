@@ -21,13 +21,14 @@
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.4",
-    "ethers": "^5.7.0",
+    "ethers": "^5.7.1",
     "hardhat": "^2.10.2"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "@openzeppelin/hardhat-upgrades": "^1.20.0",
-    "dotenv": "^16.0.1",
+    "@pancakeswap/sdk": "^3.0.0",
+    "dotenv": "^16.0.2",
     "zksync": "^0.13.1"
   }
 }
